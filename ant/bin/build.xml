@@ -1,0 +1,179 @@
+<?xml version="1.0"?>
+<project name="Compress CSS and JS" default="compress">
+	<target name="front">
+		<concat destfile="e:\dev\src\minlib\compact\cms\_front.css">
+			<filelist id="files" dir="e:\dev\src\minlib\compact\cms">
+				<file name="_.reset.css" />
+				<file name="_.foundation.5.1.1.min.css" />
+				<file name="_.foundation-icons.css" />
+				<file name="_.animate.css" />
+			</filelist>
+		</concat>
+		<concat destfile="e:\dev\src\minlib\compact\cms\_front.js" encoding="UTF8">
+			<filelist id="files" dir="e:\dev\src\minlib\compact\cms">
+				<file name="_.jquery.2.0.3.min.js" />
+				<file name="_.foundation.5.1.1.min.js" />
+				<file name="_.ng/angular.min.js" />
+				<file name="_.wow.min.js" />
+			</filelist>
+		</concat>
+	</target>
+	
+	<target name="design-page">
+		<concat destfile="e:\dev\src\minlib\compact\cms\_design-page.css">
+			<filelist id="files" dir="e:\dev\src\minlib\compact\cms">
+				<file name="_.reset.css" />
+				<file name="_.foundation.5.1.1.min.css" />
+				<file name="_.foundation-icons.css" />
+				<file name="design-page.layout.css" />
+				<file name="design-page.toolbox.css" />
+				<file name="design-page.panel.css" />
+			</filelist>
+		</concat>
+		<concat destfile="e:\dev\src\minlib\compact\cms\_design-page.js" encoding="UTF8">
+			<filelist id="files" dir="e:\dev\src\minlib\compact\cms">
+				<file name="_.jquery.2.1.1.min.js" />
+				<file name="_.foundation.5.1.1.min.js" />
+				<file name="_.ng\angular.min.js" />
+				<file name="common\autosave.js" />
+				<file name="common\dnd.js" />
+			</filelist>
+		</concat>
+	</target>
+	
+	<target name="design-template">
+		<concat destfile="e:\dev\src\minlib\compact\cms\_design-template.css">
+			<filelist id="files" dir="e:\dev\src\minlib\compact\cms">
+				<file name="_.reset.css" />
+				<file name="_.foundation.5.1.1.min.css" />
+				<file name="_.foundation-icons.css" />
+				<file name="_.codemirror.css" />
+			</filelist>
+		</concat>
+		<concat destfile="e:\dev\src\minlib\compact\cms\_design-template.js" encoding="UTF8">
+			<filelist id="files" dir="e:\dev\src\minlib\compact\cms">
+				<file name="_.jquery.2.1.1.min.js" />
+				<file name="_.foundation.5.1.1.min.js" />
+				<file name="_.ng/angular.min.js" />
+				<file name="_.codemirror-compressed.js" />
+			</filelist>
+		</concat>
+	</target>
+	
+	<target name="design-view">
+		<concat destfile="e:\dev\src\minlib\compact\cms\~design\_view.css">
+			<filelist id="files" dir="e:\dev\src\minlib\compact\cms">
+				<file name="_.reset.css" />
+				<file name="_.foundation.5.1.1.min.css" />
+			</filelist>
+		</concat>
+		<concat destfile="e:\dev\src\minlib\compact\cms\~design\_view.js" encoding="UTF8">
+			<filelist id="files" dir="e:\dev\src\minlib\compact\cms">
+				<file name="_.jquery.2.1.1.min.js" />
+				<file name="_.foundation.5.1.1.min.js" />
+				<file name="_.ng/angular.min.js" />
+			</filelist>
+		</concat>
+	</target>
+	
+	
+	
+	<target name="admin">
+		<concat destfile="e:\dev\src\minlib\compact\cms\~admin\_.css">
+			<filelist id="files" dir="e:\dev\src\minlib\compact\cms">
+				<file name="_.reset.css" />
+				<file name="_.foundation.5.1.1.min.css" />
+				<file name="~admin\action-menu.css" />
+				<file name="~admin\action-title.css" />
+				<file name="~admin\admin.css" />
+				<file name="~admin\codemirror.css" />
+				<file name="~admin\datalist.css" />
+				<file name="~admin\tab.css" />
+				<file name="~admin\toolbar.css" />
+				<file name="~admin\tooltip.css" />
+				<file name="common\lightbox.css" />
+			</filelist>
+		</concat>
+		<concat destfile="e:\dev\src\minlib\compact\cms\~admin\_.js" encoding="UTF8">
+			<filelist id="files" dir="e:\dev\src\minlib\compact\cms">
+				<file name="_.jquery.2.1.1.min.js" />
+				<file name="_.jquery-ui-1.10.3.custom.min.js" />
+				<file name="_.foundation.5.1.1.min.js" />
+				<file name="_.ng\angular.min.js" />
+				
+				<file name="common\lightbox.js" />
+			</filelist>
+		</concat>
+	</target>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<target name="concat_css">
+		<concat destfile="e:\dev\src\minlib\compact\cms\_admin.css">
+			
+		</concat>
+		<concat destfile="e:\dev\src\minlib\compact\cms\_iframe.css">
+			<filelist id="files" dir="e:\dev\src\minlib\compact\cms">
+				<file name="_.reset.css" />
+				<file name="_.jquery-ui-1.10.3.custom.min.css" />
+				<file name="_.foundation.min.css" />
+				<file name="_.foundation-icons.css" />
+				<file name="a.iframe.css" />
+				<file name="a.codemirror.css" />
+			</filelist>
+		</concat>
+		<concat destfile="e:\dev\src\minlib\compact\cms\_client.css">
+			<filelist id="files" dir="e:\dev\src\minlib\compact\cms">
+				<file name="_.reset.css" />
+				<file name="_.foundation.5.1.1.min.css" />
+				<file name="client.front.css" />
+			</filelist>
+		</concat>
+		<concat destfile="e:\dev\src\minlib\compact\acc\_sp.css">
+			<filelist id="files" dir="e:\dev\src\minlib\compact\acc">
+				<file name="_.reset.css" />
+				<file name="sp.front.css" />
+			</filelist>
+		</concat>
+	</target>
+	
+	
+	<target name="concat_js">
+		<concat destfile="e:\dev\src\minlib\compact\cms\_admin.js" encoding="UTF8">
+			
+		</concat>
+		<concat destfile="e:\dev\src\minlib\compact\cms\_a.iframe.js" encoding="UTF8">
+			<filelist id="files" dir="e:\dev\src\minlib\compact\cms">
+				<file name="_.jquery.2.0.3.min.js" />
+				<file name="_.underscore.1.5.2.min.js" />
+				<file name="_.backbone.1.1.0.min.js" />
+				<file name="_.backbone.marionette-1.1.0.min.js" />
+				<file name="_.foundation.5.0.3.min.js" />
+			</filelist>
+		</concat>
+		<concat destfile="e:\dev\src\minlib\compact\cms\_client.js" encoding="UTF8">
+			<filelist id="files" dir="e:\dev\src\minlib\compact\cms">
+				<file name="_.jquery.2.0.3.min.js" />
+				<file name="_.foundation.5.1.1.min.js" />
+			</filelist>
+		</concat>
+		<concat destfile="e:\dev\src\minlib\compact\acc\_sp.js" encoding="UTF8">
+			<filelist id="files" dir="e:\dev\src\minlib\compact\acc">
+				<file name="_.jquery.2.0.3.min.js" />
+				<file name="_.jquery.validate.min.js" />
+				<file name="sp.hint.js" />
+				<file name="sp.login.js" />
+				<file name="sp.register.js" />
+			</filelist>
+		</concat>
+	</target>
+</project>
